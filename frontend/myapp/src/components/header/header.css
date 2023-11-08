@@ -1,0 +1,26 @@
+.mybg{
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/07/08/28/notepad-3297994_640.jpg);
+  background-size: cover;
+    background-repeat: no-repeat;
+  
+    height: 80vh;
+    width: 100%;
+    margin-top: 80px;
+   
+    
+}
+
+.text{
+ display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    color: rgb(150, 153, 147);
+    position: absolute;
+    padding-left: 20px;
+    /* font-family: 'Josefin Sans', sans-serif; */
+font-family: 'Lora', serif;
+flex-direction: column;
+/* font-family: 'Varela Round', sans-serif; */
+}
+
