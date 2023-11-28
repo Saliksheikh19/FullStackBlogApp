@@ -20,12 +20,12 @@ const corsOptions = {
     optionsSuccessStatus: 204,
   };
   
- 
+  app.use(cors(corsOptions));
 app.use('/posts', postsRoutes);
 app.use('/auth', authRoutes);
 app.use('/user', usersRoutes);
 app.use('/category', categoryRoutes);
-app.use(cors(corsOptions));
+
 dotenv.config();
 
 const connect = () => {
