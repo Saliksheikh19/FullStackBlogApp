@@ -9,13 +9,7 @@ import  cors from 'cors'
 
 const app = express();
 
-app.use(cors(
-    {
-        origin: ["https://full-stack-blog-app-livid.vercel.app/"],
-        methods: ["POST", "GET" , "UPDATE" , "DELETE" , "PUT"],
-        credentials: true
-    }
-));
+
 
 const PORT = 8000;
 app.use(express.json());
