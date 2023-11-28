@@ -6,10 +6,16 @@
         "use": "@vercel/node"
       }
     ],
+    "/*": {
+      "yourFunction": {
+        "maxDuration": 50
+      }
+    },
     "routes": [
       {
         "src": "/(.*)",
         "dest": "/"
       }
     ]
-}
+  }
+  
