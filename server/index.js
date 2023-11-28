@@ -13,7 +13,14 @@ const app = express();
 
 const PORT = 8000;
 app.use(express.json());
-app.use(cors())
+const corsOptions = {
+    origin: 'https://full-stack-blog-app-nine.vercel.app/', // Update with your Vercel app domain
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    optionsSuccessStatus: 204,
+  };
+  
+  app.use(cors(corsOptions));
 app.use('/posts', postsRoutes);
 app.use('/auth', authRoutes);
 app.use('/user', usersRoutes);
