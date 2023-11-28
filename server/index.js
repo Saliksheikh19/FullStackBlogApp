@@ -13,14 +13,9 @@ const app = express();
 
 const PORT = 8000;
 
-const corsOptions = {
-    origin:["https://full-stack-blog-app-nine.vercel.app"],
-    methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"],
-    credentials: true,
-    optionsSuccessStatus: 204,
-  };
+
   
-  app.use(cors(corsOptions));
+  app.use(cors());
   app.use(express.json());
 app.use('/posts', postsRoutes);
 app.use('/auth', authRoutes);
