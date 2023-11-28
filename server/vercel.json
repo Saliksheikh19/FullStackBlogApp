@@ -6,8 +6,8 @@
         "use": "@vercel/node"
       }
     ],
-    "/*": {
-      "yourFunction": {
+    "functions": {
+      "/*": {
         "maxDuration": 50
       }
     },
