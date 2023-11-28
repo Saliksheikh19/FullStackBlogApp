@@ -13,7 +13,7 @@ console.log(search)
   const [posts , setPosts] = useState([]);
   useEffect(()=>{
 const fetchPosts = async ()=>{
-  const res = await axios.get("https://alert-moccasins-slug.cyclic.app/posts" + search)
+  const res = await axios.get("https://alert-moccasins-slug.cyclic.app/posts/" + search)
 setPosts(res.data)
 }
 fetchPosts()
