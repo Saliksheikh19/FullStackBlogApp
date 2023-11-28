@@ -9,7 +9,6 @@ import  cors from 'cors'
 
 
 
-
 const app = express();
 
 const PORT = 8000;
@@ -19,6 +18,7 @@ app.use('/posts', postsRoutes);
 app.use('/auth', authRoutes);
 app.use('/user', usersRoutes);
 app.use('/category', categoryRoutes);
+
 dotenv.config();
 
 const connect = () => {
