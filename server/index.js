@@ -15,8 +15,8 @@ const PORT = 8000;
 
 
   
-  app.use(cors());
-  app.use(express.json());
+app.use(cors());
+app.use(express.json());
 app.use('/posts', postsRoutes);
 app.use('/auth', authRoutes);
 app.use('/user', usersRoutes);

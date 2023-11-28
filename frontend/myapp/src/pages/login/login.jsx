@@ -10,7 +10,6 @@ export default function Login() {
   const passwordRef = useRef()
   const emailRef = useRef()
   const {dispatch , isFetching} = useContext(Context)
-  axios.defaults.withCredentials = true;
   const handleSubmit = async (e)=>{
     e.preventDefault()
     dispatch({type:"LOGIN_START"});
