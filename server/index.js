@@ -16,7 +16,7 @@ app.use(express.json());
 const corsOptions = {
     origin: 'https://full-stack-blog-app-nine.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    allowedHeaders: '*', // Add any custom headers
+    allowedHeaders: 'Content-Type,Authorization', // Add any custom headers
     credentials: true,
     optionsSuccessStatus: 204,
   };
