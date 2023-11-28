@@ -72,10 +72,10 @@ export default function Write() {
                     }
                     try {
                       setFile(null)
-                      const res = await axios.post('http://localhost:8000/posts/', newPost)
+                      const res = await axios.post('https://alert-moccasins-slug.cyclic.app/posts/', newPost)
                       window.location.replace("/post/" + res.data.post._id)
                      console.log(res)
-                        const cat = await axios.post('http://localhost:8000/category/',{name:category})
+                        const cat = await axios.post('https://alert-moccasins-slug.cyclic.app/category/',{name:category})
                         console.log(cat)
                         window.location.replace("/post/" + res.data.post._id)
                    
@@ -101,10 +101,10 @@ export default function Write() {
         }
     
         try {
-           const res =  await axios.post('http://localhost:8000/posts/', newPost)
+           const res =  await axios.post('https://alert-moccasins-slug.cyclic.app/posts/', newPost)
            console.log(res)
            window.location.replace("/post/" + res.data.post._id)
-           const cat = await axios.post('http://localhost:8000/category/',{name:category})
+           const cat = await axios.post('https://alert-moccasins-slug.cyclic.app/category/',{name:category})
           console.log(cat)
            window.location.replace("/post/" + res.data.post._id)
         } 
