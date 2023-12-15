@@ -11,7 +11,7 @@ const registerHandler = async (e)=>{
 e.preventDefault()
 try {
   setError(false)
-  const res = await axios.post("https://alert-moccasins-slug.cyclic.app/auth/signUp" , {
+  const res = await axios.post("https://helpful-mittens-ant.cyclic.app/auth/signUp" , {
     username,
     email,
     password,

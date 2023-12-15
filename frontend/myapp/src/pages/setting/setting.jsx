@@ -72,7 +72,7 @@ export default function Settings() {
                     }
                     try {
                       setFile(null)
-                      const res = await axios.put('https://alert-moccasins-slug.cyclic.app/user/' + user._id , updatedUser)
+                      const res = await axios.put('https://helpful-mittens-ant.cyclic.app/user/' + user._id , updatedUser)
                      
                       dispatch({type:"UPDATE_SUCCESS" , payload: res.data.updatedUser})
                      console.log(res)
@@ -102,7 +102,7 @@ export default function Settings() {
     
         try {
           setFile(null)
-          const res = await axios.put('https://alert-moccasins-slug.cyclic.app/user/' + user._id , updatedUser)
+          const res = await axios.put('https://helpful-mittens-ant.cyclic.app/user/' + user._id , updatedUser)
           dispatch({type:"UPDATE_SUCCESS" , payload: res.data.updatedUser})
           
            console.log(res.data.updatedUser)

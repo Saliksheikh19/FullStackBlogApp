@@ -15,7 +15,7 @@ export default function SinglePost() {
   const path = location.pathname.split("/")[2]
   useEffect(() => {
   const getPost = async()=>{
-    const res =await axios.get("https://alert-moccasins-slug.cyclic.app/posts/" + path)
+    const res =await axios.get("https://helpful-mittens-ant.cyclic.app/posts/" + path)
     setSinglePost(res.data.data)
     setTitle(res.data.data.title);
     setDesc(res.data.data.desc);
@@ -26,7 +26,7 @@ export default function SinglePost() {
   }, [path])
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://alert-moccasins-slug.cyclic.app/posts/${singlePost._id}`, {
+      await axios.delete(`https://helpful-mittens-ant.cyclic.app/posts/${singlePost._id}`, {
         data: { username: user.username },
       });
       window.location.replace("/");
@@ -35,7 +35,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`https://alert-moccasins-slug.cyclic.app/posts/${singlePost._id}`, {
+      await axios.put(`https://helpful-mittens-ant.cyclic.app/posts/${singlePost._id}`, {
         username: user.username,
         title,
         desc,

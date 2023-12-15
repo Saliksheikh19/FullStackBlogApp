@@ -10,7 +10,7 @@ export default function Sidebar() {
   const [cats , setCats] = useState([]);
   useEffect(()=>{
     const fetchCats = async ()=>{
-      const res = await axios.get("https://alert-moccasins-slug.cyclic.app/category")
+      const res = await axios.get("https://helpful-mittens-ant.cyclic.app/category")
 setCats(res.data)
  
 

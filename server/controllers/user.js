@@ -1,6 +1,5 @@
 import bcrypt from "bcrypt";
 import { User } from "../models/User.js";
-
 export const getUsers = (req, res) => {
     res.status(200).send('here are your users')
     console.log('here are your user');
